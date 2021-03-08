@@ -27,6 +27,12 @@ module.exports = {
         module: () => import('@/components/button/demo.md'),
         style: true,
       },
+      {
+        key: 'image',
+        name: '图片',
+        module: () => import('@/components/image/demo.md'),
+        style: true,
+      }
     ],
     form: [
       {
