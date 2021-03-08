@@ -135,7 +135,7 @@ export default function (props: ImageProps) {
   //   });
   // }
 
-  return () => (
+  return (
     <div className={`${bem({round: props.round})}`} style={style.value}>
       {renderImage()}
       {renderPlaceholder()}
