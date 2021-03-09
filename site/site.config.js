@@ -28,6 +28,12 @@ module.exports = {
         style: true,
       },
       {
+        key: 'icon',
+        name: '图标',
+        module: () => import('@/components/icon/demo.md'),
+        style: true
+      },
+      {
         key: 'image',
         name: '图片',
         module: () => import('@/components/image/demo.md'),
@@ -43,7 +49,14 @@ module.exports = {
       },
     ],
     feedback: [],
-    view: [],
+    view: [
+      {
+        key: 'badge',
+        name: '徽标',
+        module: () => import('@/components/badge/demo.md'),
+        style: false,
+      },
+    ],
     navigation: [],
     other: [],
   },

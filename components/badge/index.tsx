@@ -7,13 +7,13 @@ const [bem] = createNamespace('badge');
 
 export default function Badge(props: BadgeProps) {
 
-  const {content, children, tag} = props
+  const {content, children, tag, dot, max, color, offset} = props
+
+  console.log('11111111', content)
 
   const hasContent = () => isDef(content) && props.content !== ''
 
   const renderContent = () => {
-    const {dot, max, content} = props;
-
     if (!dot && hasContent()) {
 
       if (isDef(max) && isNumeric(content!) && +content > max) {
@@ -25,13 +25,13 @@ export default function Badge(props: BadgeProps) {
   };
 
   const renderBadge = () => {
-    if (hasContent() || props.dot) {
+    if (hasContent() || dot) {
       const style: Record<string, any> = {
-        background: props.color,
+        background: color,
       };
 
-      if (props.offset) {
-        const [x, y] = props.offset;
+      if (offset) {
+        const [x, y] = offset;
         if (children) {
           style.top = `${y}px`;
           style.right = `${-x}px`;
@@ -43,7 +43,7 @@ export default function Badge(props: BadgeProps) {
 
       return (
         <div
-          className={`${bem({dot: props.dot})}`}
+          className={`${bem({dot})}`}
           style={style}
         >
           {renderContent()}
