@@ -2,7 +2,6 @@ import React, { createElement } from 'react';
 import { createNamespace } from '../utils';
 import { BORDER_SURROUND } from '../utils/constant';
 import PropsType from './PropsType';
-import './style/index.scss';
 
 const [bem] = createNamespace('button');
 
