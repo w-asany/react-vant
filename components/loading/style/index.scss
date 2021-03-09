@@ -93,12 +93,11 @@
   }
 }
 
-// TODO
-//.generate-spinner($n, $i: 1) when ($i =< $n) {
-//  .van-loading__spinner--spinner i:nth-of-type(${i}) {
-//transform: rotate($i * 30deg);
-//opacity: 1 - (0.75 / 12) * ($i - 1);
-//}
-//.generate-spinner($n, ($i + 1));
-//}
-//.generate-spinner(12);
+$i: 12;
+@while $i > 0 {
+  .van-loading__spinner--spinner i:nth-of-type(#{$i}) {
+    transform: rotate($i * 30deg);
+    opacity: 1 - (0.75 / 12) * ($i - 1);
+  }
+  $i: $i - 1;
+}
