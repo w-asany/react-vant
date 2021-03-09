@@ -3,16 +3,14 @@
 ## 基本用法
 
 ```jsx
-import {Badge} from 'zarm';
+import { Badge, Button } from 'zarm';
 
 ReactDOM.render(
   <>
     <Badge content={12}>
-      <div style={{
-        width: 40,
-        height: 40
-      }}></div>
+      <Button>default</Button>
     </Badge>
+    <Button theme="primary">primary</Button>
   </>,
   mountNode,
 );

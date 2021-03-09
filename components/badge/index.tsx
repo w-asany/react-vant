@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { isDef, createNamespace } from '../utils';
 import { isNumeric } from '../utils/validate/number';
 import { BadgeProps } from "./PropsType";
@@ -7,9 +7,9 @@ const [bem] = createNamespace('badge');
 
 export default function Badge(props: BadgeProps) {
 
-  const {content, children, tag, dot, max, color, offset} = props
+  const {content, children, tag = '', dot, max, color, offset} = props
 
-  console.log('11111111', content)
+  console.log(tag as ReactNode)
 
   const hasContent = () => isDef(content) && props.content !== ''
 
@@ -52,15 +52,15 @@ export default function Badge(props: BadgeProps) {
     }
   };
 
-  if (children) {
-    return React.createElement(tag, {
-      className: bem('wrapper'),
-      children: <>
-        {children}
-        {renderBadge()}
-      </>
-    });
-  }
+  // if (children) {
+  //   return React.createElement(tag, {
+  //     className: bem('wrapper'),
+  //     children: <>
+  //       {children}
+  //       {renderBadge()}
+  //     </>
+  //   });
+  // }
 
   return renderBadge();
 }
