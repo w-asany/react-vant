@@ -61,6 +61,11 @@ module.exports = {
         module: () => import('@/components/loading/demo.md'),
         style: false,
       },
+      {
+        key: 'pull-refresh',
+        name: '下拉刷新',
+        module: () => import('@/components/pull-refresh/demo.md')
+      }
     ],
     view: [
       {
