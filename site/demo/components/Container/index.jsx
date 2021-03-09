@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classnames from 'classnames';
-import { Icon, Radio, Popper, ConfigProvider } from 'zarm';
+import { Icon, Radio, Popper, ConfigProvider } from 'react-vant';
 import Context from '@site/utils/context';
 import Events from '@site/utils/events';
 import './style.scss';
@@ -17,8 +17,8 @@ const Container = (props) => {
 
   const currentLocale =
     locale === 'enUS'
-      ? require('zarm/config-provider/locale/en_US')
-      : require('zarm/config-provider/locale/zh_CN');
+      ? require('react-vant/config-provider/locale/en_US')
+      : require('react-vant/config-provider/locale/zh_CN');
 
   useEffect(() => {
     window.scrollTo(0, 0);

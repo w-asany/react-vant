@@ -3,7 +3,7 @@
 ## 基本用法
 
 ```jsx
-import { Badge, Button } from 'zarm';
+import { Badge, Button } from 'react-vant';
 
 ReactDOM.render(
   <>

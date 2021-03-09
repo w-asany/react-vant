@@ -4,9 +4,9 @@
 
 ```jsx
 import { useState } from 'react';
-import { ConfigProvider, Cell, Button, SearchBar, Modal, Keyboard, Radio, Message } from 'zarm';
-import enUS from 'zarm/config-provider/locale/en_US';
-import zhCN from 'zarm/config-provider/locale/zh_CN';
+import { ConfigProvider, Cell, Button, SearchBar, Modal, Keyboard, Radio, Message } from 'react-vant';
+import enUS from 'react-vant/config-provider/locale/en_US';
+import zhCN from 'react-vant/config-provider/locale/zh_CN';
 
 const Demo = () => {
   const [locale, setLocale] = useState(GlobalContext.locale);

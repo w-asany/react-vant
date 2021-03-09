@@ -20,7 +20,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      zarm: path.join(process.cwd(), 'components'),
+      'react-vant': path.join(process.cwd(), 'components'),
       '@': path.join(process.cwd(), '/'),
       '@site': path.join(process.cwd(), 'site'),
     },

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import { transform } from '@babel/standalone';
-import { Panel } from 'zarm';
-import enUS from 'zarm/config-provider/locale/en_US';
-import zhCN from 'zarm/config-provider/locale/zh_CN';
+import { Panel } from 'react-vant';
+import enUS from 'react-vant/config-provider/locale/en_US';
+import zhCN from 'react-vant/config-provider/locale/zh_CN';
 
 import '@/components/style/entry';
 
@@ -22,7 +22,7 @@ export default ({ location, globalContext, children }) => {
           en_US: enUS,
           zh_CN: zhCN,
         };
-        const args = ['context', 'React', 'ReactDOM', 'Zarm', 'GlobalContext', 'Locale'];
+        const args = ['context', 'React', 'ReactDOM', 'ReactVant', 'GlobalContext', 'Locale'];
         const argv = [this, React, ReactDOM, Element, globalContext, locale];
 
         return {
@@ -33,9 +33,9 @@ export default ({ location, globalContext, children }) => {
       .then(({ args, argv }) => {
         const value = source[2]
           .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react';/, 'const { $1 } = React;')
-          .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'zarm';/, 'const { $1 } = Zarm;')
+          .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react-vant';/, 'const { $1 } = ReactVant;')
           .replace(
-            /import\s+(.*)\s+from\s+'zarm\/config-provider\/locale\/(.*)';/g,
+            /import\s+(.*)\s+from\s+'react-vant\/config-provider\/locale\/(.*)';/g,
             "const $1 = Locale['$2'];",
           )
           // 替换格式

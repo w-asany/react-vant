@@ -3,7 +3,7 @@
 ## 基本用法
 
 ```jsx
-import { Tooltip, Button, Message, Icon } from 'zarm';
+import { Tooltip, Button, Message, Icon } from 'react-vant';
 
 const Demo = () => (
   <div className="direction-demo">

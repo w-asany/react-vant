@@ -34,5 +34,5 @@ export default {
   'app.home.resources.type.zarm-axure': '移动端组件 Axure 元件库',
   'app.home.resources.type.zarm-web-axure': '桌面端组件 Axure 元件库',
 
-  'app.demo.footer.copyright': '众安·体验设计中心',
+  'app.demo.footer.copyright': 'React-Vant',
 };

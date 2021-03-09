@@ -4,7 +4,7 @@
 
 ```jsx
 import { useState } from 'react';
-import { Cell, Button, Popper, Select } from 'zarm';
+import { Cell, Button, Popper, Select } from 'react-vant';
 
 const Demo = () => {
   const [visible, setVisible] = useState(false);
@@ -103,7 +103,7 @@ ReactDOM.render(<Demo />, mountNode);
 
 ```jsx
 import { useState } from 'react';
-import { Cell, Button, Popper, Radio, Message, Icon } from 'zarm';
+import { Cell, Button, Popper, Radio, Message, Icon } from 'react-vant';
 
 const Demo = () => {
   const [arrowPointAtCenter, setArrowPointAtCenter] = useState(false);

@@ -3,7 +3,7 @@
 ## 基本用法
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -17,7 +17,7 @@ ReactDOM.render(
 ## 块级按钮
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -39,7 +39,7 @@ ReactDOM.render(
 ## 按钮主题
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -54,7 +54,7 @@ ReactDOM.render(
 ## 按钮尺寸
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -70,7 +70,7 @@ ReactDOM.render(
 ## 按钮形状
 
 ```jsx
-import { Button, Icon } from 'zarm';
+import { Button, Icon } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -93,7 +93,7 @@ ReactDOM.render(
 ## 带阴影
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -112,7 +112,7 @@ ReactDOM.render(
 ## 图标按钮
 
 ```jsx
-import { Button, Icon } from 'zarm';
+import { Button, Icon } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -127,7 +127,7 @@ ReactDOM.render(
 ## 链接按钮
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>
@@ -149,7 +149,7 @@ ReactDOM.render(
 ## 幽灵按钮
 
 ```jsx
-import { Button } from 'zarm';
+import { Button } from 'react-vant';
 
 ReactDOM.render(
   <>

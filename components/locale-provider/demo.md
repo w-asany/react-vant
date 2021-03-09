@@ -4,7 +4,7 @@
 
 ```jsx
 import { useState } from 'react';
-import { Cell, LocaleProvider, Button, SearchBar, Modal, Keyboard, Radio } from 'zarm';
+import { Cell, LocaleProvider, Button, SearchBar, Modal, Keyboard, Radio } from 'react-vant';
 
 const locales = {
   en_US: {

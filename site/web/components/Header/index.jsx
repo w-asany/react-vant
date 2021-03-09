@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { IntlProvider, FormattedMessage } from 'react-intl';
-import { Icon } from 'zarm';
+import { Icon } from 'react-vant';
 import classnames from 'classnames';
 import docsearch from 'docsearch.js';
 import MenuComponent from '@site/web/components/Menu';
@@ -31,7 +31,7 @@ const Header = ({ children }) => {
   const [locale, setLocale] = useState(window.localStorage.locale || 'zhCN');
   const currentPageKey = location.pathname.split('/')[1] || '/';
 
-  const bb = () => setLocale('zhCN');
+  // const bb = () => setLocale('zhCN');
   const keyupEvent = (event) => {
     if (event.keyCode === 83 && event.target === document.body) {
       searchInput.current.focus();
