@@ -56,6 +56,12 @@ module.exports = {
         module: () => import('@/components/badge/demo.md'),
         style: false,
       },
+      {
+        key: 'tag',
+        name: '标签',
+        module: () => import('@/components/tag/demo.md'),
+        style: false
+      }
     ],
     navigation: [],
     other: [],
