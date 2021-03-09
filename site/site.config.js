@@ -42,6 +42,12 @@ module.exports = {
     ],
     form: [
       {
+        key: 'field',
+        name: '输入框',
+        module: () => import('@/components/field/demo.md'),
+        style: false,
+      },
+      {
         key: 'input',
         name: '文本框',
         module: () => import('@/components/input/demo.md'),
