@@ -16,3 +16,4 @@ export { default as Input } from './input';
 export { default as Image } from './image'
 export { default as Badge } from './badge'
 export { default as Tag } from './tag'
+export { default as Loading } from './loading'

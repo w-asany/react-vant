@@ -54,7 +54,14 @@ module.exports = {
         style: false,
       },
     ],
-    feedback: [],
+    feedback: [
+      {
+        key: 'loading',
+        name: '加载',
+        module: () => import('@/components/loading/demo.md'),
+        style: false,
+      },
+    ],
     view: [
       {
         key: 'badge',
