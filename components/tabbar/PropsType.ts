@@ -11,7 +11,8 @@ export type TabBarProvide = {
 };
 
 export interface TabBarProps {
-  route: boolean;
+  // TODO
+  // route: boolean;
   zIndex: number | string;
   placeholder: boolean;
   activeColor: string;
@@ -22,5 +23,6 @@ export interface TabBarProps {
   fixed: boolean; // true
   safeAreaInsetBottom?: boolean
 
-  children: ReactNode
+  style?: Record<string, any>;
+  items: ReactNode[];
 }
