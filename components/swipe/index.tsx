@@ -5,7 +5,6 @@ import Events from '../utils/events';
 import Drag from '../drag';
 
 
-
 export default class Swipe extends Component<SwipeProps, any> {
   static defaultProps: SwipeProps = {
     prefixCls: 'za-carousel',

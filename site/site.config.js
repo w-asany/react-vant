@@ -82,7 +82,14 @@ module.exports = {
       }
     ],
     navigation: [],
-    other: [],
+    other: [
+      {
+        key: 'drag',
+        name: '拖拽',
+        module: () => import('@/components/drag/demo.md'),
+        style: false
+      }
+    ],
   },
   design: [
     {

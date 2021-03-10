@@ -2,6 +2,7 @@ export { default as LocaleProvider } from './locale-provider';
 export { default as ConfigProvider } from './config-provider';
 export { default as ConfigReceiver } from './config-receiver';
 
+export { default as Drag } from './drag'
 
 export { default as Panel } from './panel';
 export { default as Tooltip } from './tooltip';
